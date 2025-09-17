@@ -33,7 +33,7 @@ public class Main {
         CanalEnvio sms = new SMS();
 
         Notificacion alertaEmail = new Alerta(email);
-        Notificacion recordatorioSMS = new Recordatorio(sms);
+        Notificacion recordatorioSMS = new Recordatorio((builder.CanalEnvio) sms);
 
         alertaEmail.enviar("Incendio en el edificio");
         recordatorioSMS.enviar("Reunión a las 15:00");
