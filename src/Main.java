@@ -7,9 +7,12 @@ import decorator.DescargasOffline;
 import decorator.HD;
 import decorator.Plan;
 import decorator.PlanBasico;
+import facade.TiendaFacade;
+import facade.Envio;
+import facade.Pago;
 
 public class Main {
-    public static void main(String[] args) {
+    public static <CanalEnvio> void main(String[] args) {
 
         //Ejercicio 1
 
@@ -26,7 +29,7 @@ public class Main {
 
         System.out.println("Ejercicio 2");
 
-        CanalEnvio email = new Email();
+        CanalEnvio email = new CanalEnvio();
         CanalEnvio sms = new SMS();
 
         Notificacion alertaEmail = new Alerta(email);
@@ -44,6 +47,7 @@ public class Main {
         plan1 = new DescargasOffline(plan1);
 
         System.out.println("Costo total: $" + plan1.getCosto());
+        //Ejercicio 4
 
 
 
