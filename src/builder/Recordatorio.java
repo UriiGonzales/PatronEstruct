@@ -1,4 +1,4 @@
-package Builder;
+package builder;
 
 public class Recordatorio extends Notificacion {
     public Recordatorio(CanalEnvio canal) {

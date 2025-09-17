@@ -1,4 +1,4 @@
-package Builder;
+package builder;
 
 public class Alerta extends Notificacion {
     public Alerta(CanalEnvio canal) {

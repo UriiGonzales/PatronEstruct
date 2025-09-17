@@ -1,4 +1,4 @@
-package Adapter;
+package adapter;
 
 public class ImpresoraTextoAdapter implements Impresora {
     private ImpresoraTexto impresoraTexto;
