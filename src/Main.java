@@ -7,7 +7,10 @@ import decorator.DescargasOffline;
 import decorator.HD;
 import decorator.Plan;
 import decorator.PlanBasico;
-
+import facade.Carrito;
+import facade.TiendaFacade;
+import facade.Envio;
+import facade.Pago;
 public class Main {
     public static void main(String[] args) {
 
@@ -45,7 +48,13 @@ public class Main {
 
         System.out.println("Costo total: $" + plan1.getCosto());
         //Ejercicio 4
+        TiendaFacade tienda = new TiendaFacade();
 
+        // Simulamos una compra
+        tienda.comprar("Notebook", 250000);
+
+        // Otra compra
+        tienda.comprar("Auriculares", 35000);
 
 
 
