@@ -23,6 +23,6 @@ public class Main {
         alertaEmail.enviar("Incendio en el edificio");
         recordatorioSMS.enviar("Reunión a las 15:00");
         //Ejercicio 3
-    }
+
     }
 }
