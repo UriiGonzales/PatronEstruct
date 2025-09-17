@@ -50,6 +50,7 @@ public class Main {
         //Ejercicio 4
 
         //Ejercicio 7
+
         System.out.println("Ejercicio 7");
         // Platos individuales
         ElementoMenu plato1 = new Plato("Milanesa con papas", 2500);
@@ -70,8 +71,6 @@ public class Main {
 
         // Mostrar
         menuPrincipal.mostrar();
-
-
 
     }
 }
