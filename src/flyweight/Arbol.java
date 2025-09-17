@@ -1,20 +1,18 @@
 package flyweight;
-import java.util.HashMap;
-import java.util.Map;
+
 public class Arbol {
-    private final String tipo;   // Intrínseco
-    private final String color;  // Intrínseco
-    private final String textura; // Intrínseco
+    public class Arbol {
+        private final String tipo;   // Intrínseco
+        private final String color;  // Intrínseco
 
-    public Arbol(String tipo, String color, String textura) {
-        this.tipo = tipo;
-        this.color = color;
-        this.textura = textura;
-    }
+        public Arbol(String tipo, String color) {
+            this.tipo = tipo;
+            this.color = color;
+        }
 
-    // Estado extrínseco → posición
-    public void mostrar(int x, int y) {
-        System.out.println("Árbol tipo " + tipo + " de color " + color +
-                " en posición (" + x + "," + y + ")");
+        public void dibujar(int x, int y) {
+            System.out.println("Árbol tipo " + tipo + " de color " + color +
+                    " en posición (" + x + "," + y + ")");
+        }
     }
 }

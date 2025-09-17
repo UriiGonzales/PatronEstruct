@@ -8,7 +8,7 @@ public class FabricaDeArboles {
         String clave = tipo + "-" + color;
         if (!arboles.containsKey(clave)) {
             arboles.put(clave, new Arbol(tipo, color));
-            System.out.println("🌱 Creado nuevo Arbol: " + clave);
+            System.out.println("Creado nuevo Arbol: " + clave);
         }
         return arboles.get(clave);
     }

@@ -13,6 +13,9 @@ import facade.Envio;
 import facade.Pago;
 import flyweight.Arbol;
 import flyweight.FabricaDeArboles;
+import proxy.ArchivoReal;
+import proxy.ArchivoProxy;
+import proxy.Archivo;
 
 public class Main {
     public static void main(String[] args) {
@@ -68,7 +71,12 @@ public class Main {
             Arbol roble = FabricaDeArboles.getArbol("Roble", "Marrón");
             roble.dibujar(i * 3, i * 4);
         }
+        //Ejercicio 6
+        Archivo archivo1 = new ArchivoProxy("secretos.txt", "admin", true);
+        archivo1.abrir();
 
+        Archivo archivo2 = new ArchivoProxy("secretos.txt", "invitado", false);
+        archivo2.abrir();
 
     }
 }
