@@ -11,6 +11,9 @@ import facade.Carrito;
 import facade.TiendaFacade;
 import facade.Envio;
 import facade.Pago;
+import flyweight.Arbol;
+import flyweight.FabricaDeArboles;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -55,7 +58,16 @@ public class Main {
 
         // Otra compra
         tienda.comprar("Auriculares", 35000);
+        //Ejercicio 5
+        for (int i = 0; i < 5; i++) {
+            Arbol pino = FabricaDeArboles.getArbol("Pino", "Verde");
+            pino.dibujar(i, i * 2);
+        }
 
+        for (int i = 0; i < 5; i++) {
+            Arbol roble = FabricaDeArboles.getArbol("Roble", "Marrón");
+            roble.dibujar(i * 3, i * 4);
+        }
 
 
     }
