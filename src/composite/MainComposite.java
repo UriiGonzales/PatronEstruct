@@ -1,4 +1,4 @@
-package Composite;
+package composite;
 
 // Clase main para probar el patrón Composite
 public class MainComposite {

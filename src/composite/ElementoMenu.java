@@ -1,7 +1,4 @@
-package Composite;
-
-import java.util.ArrayList;
-import java.util.List;
+package composite;
 
 // Interfaz común que muestra menu
 public interface ElementoMenu {

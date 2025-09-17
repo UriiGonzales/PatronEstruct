@@ -1,4 +1,4 @@
-package Composite;
+package composite;
 
 // Clase hoja: Plato individual
 public class Plato implements ElementoMenu {

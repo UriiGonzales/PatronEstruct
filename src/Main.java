@@ -7,12 +7,9 @@ import decorator.DescargasOffline;
 import decorator.HD;
 import decorator.Plan;
 import decorator.PlanBasico;
-import facade.TiendaFacade;
-import facade.Envio;
-import facade.Pago;
 
 public class Main {
-    public static <CanalEnvio> void main(String[] args) {
+    public static void main(String[] args) {
 
         //Ejercicio 1
 
@@ -29,11 +26,11 @@ public class Main {
 
         System.out.println("Ejercicio 2");
 
-        CanalEnvio email = new CanalEnvio();
+        CanalEnvio email = new Email();
         CanalEnvio sms = new SMS();
 
         Notificacion alertaEmail = new Alerta(email);
-        Notificacion recordatorioSMS = new Recordatorio((builder.CanalEnvio) sms);
+        Notificacion recordatorioSMS = new Recordatorio(sms);
 
         alertaEmail.enviar("Incendio en el edificio");
         recordatorioSMS.enviar("Reunión a las 15:00");
