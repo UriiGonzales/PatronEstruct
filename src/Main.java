@@ -13,6 +13,8 @@ public class Main {
 
         //Ejercicio 1
 
+        System.out.println("Ejercicio 1");
+
         Impresora impresoraPDF = new ImpresoraPDF();
         ImpresoraTexto impresoraTexto = new ImpresoraTexto();
         Impresora impresoraTextoAdapter = new ImpresoraTextoAdapter(impresoraTexto);
@@ -21,6 +23,8 @@ public class Main {
         impresoraTextoAdapter.imprimir("Documento2.txt");
 
         //Ejercicio 2
+
+        System.out.println("Ejercicio 2");
 
         CanalEnvio email = new Email();
         CanalEnvio sms = new SMS();
@@ -32,6 +36,8 @@ public class Main {
         recordatorioSMS.enviar("Reunión a las 15:00");
 
         //Ejercicio 3
+
+        System.out.println("Ejercicio 3");
 
         Plan plan1 = new PlanBasico();
         plan1 = new HD(plan1);
