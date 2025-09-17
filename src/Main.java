@@ -68,7 +68,7 @@ public class Main {
         menuPrincipal.agregar(plato3);
         menuPrincipal.agregar(postres); // un menú dentro de otro
 
-        // Mostrar todo
+        // Mostrar
         menuPrincipal.mostrar();
 
 
