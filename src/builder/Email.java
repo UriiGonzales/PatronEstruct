@@ -1,4 +1,4 @@
-package Builder;
+package builder;
 
 public class Email implements CanalEnvio {
     @Override

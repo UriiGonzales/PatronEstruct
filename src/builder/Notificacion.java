@@ -1,4 +1,4 @@
-package Builder;
+package builder;
 
 public abstract class Notificacion {
     protected CanalEnvio canal;

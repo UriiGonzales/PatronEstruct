@@ -1,4 +1,4 @@
-package Adapter;
+package adapter;
 
 public class ImpresoraTexto {
     public void imprimirTexto(String documento) {
