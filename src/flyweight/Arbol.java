@@ -1,7 +1,6 @@
 package flyweight;
 
 public class Arbol {
-    public class Arbol {
         private final String tipo;   // Intrínseco
         private final String color;  // Intrínseco
 
@@ -14,5 +13,4 @@ public class Arbol {
             System.out.println("Árbol tipo " + tipo + " de color " + color +
                     " en posición (" + x + "," + y + ")");
         }
-    }
 }
