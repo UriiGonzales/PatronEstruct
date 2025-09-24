@@ -12,6 +12,6 @@ public class Plato implements ElementoMenu {
 
     @Override
     public void mostrar() {
-        System.out.println("- Plato: " + nombre + " ($" + precio + ")");
+        System.out.println("\t" + "- Plato: " + nombre + " ($" + precio + ")");
     }
 }
